@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ProvaAngularPedro</title>
+  <base href="/">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ProvaAngularPedro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body class="sidebar-menu-collapsed">
+  <app-root></app-root>
+  <script>
+    function toggleMenu() {
+      let body = document.querySelector("body");
+      let hasCollapsed = body.classList.contains("sidebar-menu-collapsed");
+      if(hasCollapsed) {
+       body.classList.remove("sidebar-menu-collapsed");
+       body.classList.add("noscroll");
+      } else {
+        body.classList.remove("noscroll");
+        body.classList.add("sidebar-menu-collapsed");
+      };
+    }
+  </script>
+</body>
+</html>
